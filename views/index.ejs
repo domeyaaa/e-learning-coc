@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    E-learning CoC
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/login.css' />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <form action="/login" method="post">
+    <div class="container">
+      <div class="row">
+        <div class="col title">
+          <h1>ระบบ E-Learning<br /> วิทยาลัยการคอมพิวเตอร์</h1>
+        </div>
+        <div class="col">
+          <% if(locals.message){ %>
+            <div class="alert alert-danger" role="alert">
+              <%=locals.message %>
+            </div>
+            <% } %>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">อีเมล</span>
+            <input type="email" class="form-control" placeholder="example@kkumail.com" name="email" aria-label="อีเมล"
+              aria-describedby="addon-wrapping" required autofocus>
+          </div>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">รหัสผ่าน</span>
+            <input type="password" name="password" class="form-control" placeholder="" aria-label="รหัสผ่าน"
+              aria-describedby="addon-wrapping" autocomplete="" required>
+          </div>
+          <button class="btn btn-primary" type="submit">เข้าสู่ระบบ</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

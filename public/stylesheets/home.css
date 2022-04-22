@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.name
+{
+    color: #fff;
+}
+
+.navbar-brand{
+    overflow: hidden;
+}
+
+.navbar{
+    box-shadow: 1px 2px 3px #a3a3a3;
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card{
+    margin: 10px;
+}
+
+.modal-body,.modal-title{
+    text-align: center;
+}
+
